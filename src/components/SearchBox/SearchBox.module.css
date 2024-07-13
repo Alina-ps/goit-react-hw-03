@@ -1,0 +1,7 @@
+.searchWrapper {
+}
+
+.searchLabel {
+  display: flex;
+  flex-direction: column;
+}
