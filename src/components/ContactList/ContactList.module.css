@@ -1,16 +1,51 @@
+:root {
+  --first-color: #e3ccb2;
+  --second-color: #f9ec7e;
+  --third-color: #e26274;
+}
+
 .list {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
+  padding-left: 0;
 }
 
 .item {
-  border: 1px solid #fff;
   padding: 20px;
   height: 100px;
   width: 500px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--third-color);
+  border-radius: 8px;
+  border: none;
+  color: var(--second-color);
+}
+
+.contactBtn {
+  background-color: var(--second-color);
+  color: var(--third-color);
+  font-size: 20px;
+  transition: transform 250ms ease, opacity 250ms ease, box-shadow 250ms ease,
+    background-color 250ms ease;
+}
+
+.contactBtn:active {
+  transform: scale(0.95);
+}
+
+.contactBtn:focus {
+  outline: 0;
+}
+
+.contactBtn:hover,
+.contactBtn:active {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: var(--second-color);
+  opacity: 0.6;
 }
