@@ -1,7 +1,8 @@
 .searchWrapper {
+  margin-left: 40px;
 }
 
-.searchLabel {
+.searchName {
   display: flex;
   flex-direction: column;
 }

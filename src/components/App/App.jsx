@@ -11,12 +11,22 @@ function App() {
     { id: "id-3", name: "Eden Clements", number: "645-17-79" },
     { id: "id-4", name: "Annie Copeland", number: "227-91-26" },
   ]);
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value.toLowerCase());
+  };
+
+  const foundedContacts = contacts.filter((contact) =>
+    contact.name.toLowerCase().includes(searchTerm)
+  );
   return (
     <div>
       <h1>Phonebook</h1>
       <ContactForm />
-      <SearchBox />
-      <ContactList contacts={contacts} />
+      <SearchBox value={searchTerm} onChange={handleSearchChange} />
+      <ContactList contacts={foundedContacts} />
     </div>
   );
 }

@@ -1,12 +1,10 @@
 import s from "./SearchBox.module.css";
 
-const SearchBox = () => {
+const SearchBox = ({ value, onChange }) => {
   return (
     <div className={s.searchWrapper}>
-      <label className={s.searchLabel}>
-        Find contacts by name
-        <input type="text" />
-      </label>
+      <p className={s.searchName}>Find contacts by name</p>
+      <input type="text" value={value} onChange={onChange} />
     </div>
   );
 };
