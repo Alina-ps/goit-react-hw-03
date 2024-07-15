@@ -7,9 +7,6 @@ const Contact = ({ name, number }) => {
         <p>{name}</p>
         <p>{number}</p>
       </div>
-      <button className={s.contactBtn} type="button">
-        Delete
-      </button>
     </>
   );
 };
