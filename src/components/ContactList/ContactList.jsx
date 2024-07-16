@@ -8,14 +8,12 @@ const ContactList = ({ contacts, onDelete }) => {
         {contacts.map((contact) => {
           return (
             <li className={s.item} key={contact.id}>
-              <Contact name={contact.name} number={contact.number} />
-              <button
-                className={s.contactBtn}
-                onClick={() => onDelete(contact.id)}
-                type="button"
-              >
-                Delete
-              </button>
+              <Contact
+                id={contact.id}
+                name={contact.name}
+                number={contact.number}
+                onDelete={onDelete}
+              />
             </li>
           );
         })}

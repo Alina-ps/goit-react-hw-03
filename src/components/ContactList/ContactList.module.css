@@ -27,7 +27,7 @@
   color: var(--second-color);
 }
 
-.contactBtn {
+/* .contactBtn {
   background-color: var(--second-color);
   color: var(--third-color);
   font-size: 20px;
@@ -48,4 +48,4 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   background-color: var(--second-color);
   opacity: 0.6;
-}
+} */
